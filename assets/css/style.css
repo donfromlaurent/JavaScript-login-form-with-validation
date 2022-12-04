@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100vw;
+
+}
+.container{
+    width: 400px;
+    border: 2px solid tomato;
+    border-radius: 12px;
+    background-color: #fff;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.container h2{
+    font-size: 2em;
+    padding: 18px 40px;
+    color: tomato;
+    text-transform: capitalize;
+}
+form{
+    padding: 30px 40px;
+}
+.form-control{
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    display: block;
+    font-family: inherit;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+}
+.form-control .hidden{
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    font-size: 20px;
+    visibility: hidden;
+}
+small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: red;
+}
+button{
+    display: block;
+    width: 100%;
+    background: tomato;
+    padding: 18px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+button:hover{
+    background: tomato;
+    opacity: 0.9;
+}
+.form-control.success .fa-check-circle{
+    color: green;
+    visibility: visible;
+}
+.form-control.error .fa-exclamation-circle{
+    color: red;
+    visibility: visible;
+}
+.form-control.error small{
+    visibility: visible;
+}
+.icon{
+    display: block;
+    visibility: visible;
+    font-size: 18px;
+    color: tomato;
+}
+@media (max-width: 400px){
+    .container h2{
+        font-size: 1em;
+    }
+}
